@@ -11,6 +11,10 @@ from .utils.helpers import *
 import os
 current_path = os.path.abspath(os.path.dirname(__file__))
 
+import nltk
+
+nltk.download('stopwords')
+
 # Create your views here.
 def index(request):
     questions_list = Question.objects.order_by('set')

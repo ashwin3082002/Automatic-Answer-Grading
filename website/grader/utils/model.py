@@ -1,3 +1,4 @@
+# import tensorflow.contrib.keras as keras
 from keras.layers import Embedding, LSTM, Dense, Dropout, Lambda, Flatten
 from keras.models import Sequential, load_model, model_from_config
 import keras.backend as K
